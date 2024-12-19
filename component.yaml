@@ -1,0 +1,20 @@
+name: country-data-fetcher
+description: A component that combines World Bank and REST Countries API data.
+inputs:
+  - name: country_code
+    type: string
+    description: The ISO country code (e.g., "USA").
+  - name: indicator
+    type: string
+    description: The indicator to fetch from World Bank (e.g., "NY.GDP.MKTP.CD").
+  - name: year
+    type: integer
+    description: The year for which the indicator is to be fetched.
+outputs:
+  - name: combined_data
+    type: object
+    description: Combined JSON data from World Bank and REST Countries APIs.
+
+code:
+  language: python
+  main: country_services
