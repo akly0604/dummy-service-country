@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="helloSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <payloadFactory media-type="json">
+        <format>{&#xd;
+"Hello": "Hello"&#xd;
+}</format>
+        <args/>
+    </payloadFactory>
+    <respond/>
+</sequence>

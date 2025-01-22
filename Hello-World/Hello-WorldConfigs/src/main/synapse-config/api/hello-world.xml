@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/hello-world" name="hello-world" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/helloWorld">
+        <inSequence>
+            <sequence key="helloSeq"/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
